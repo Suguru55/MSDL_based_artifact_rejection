@@ -3,7 +3,7 @@ submitted to Neurocomputing<br>
 
 __\<Despription\>__ <br>
 These codes use an open-access dataset, <a href="http://www.bbci.de/competition/iv/#datasets" target="_blank">BCI competition IV dataset 2a</a>.<br>
-Please send e-mail from <a href="http://www.bbci.de/competition/iv/#download" target="_blank">here</a> to access the data before using our codes.<br>
+Please send <a href="http://www.bbci.de/competition/iv/#download" target="_blank">e-mail</a> to access the data before using our codes.<br>
 
 This project has two main m.files:<br>
 1. Make_ss_data<br>
