@@ -1,0 +1,2 @@
+runica.m:https://sccn.ucsd.edu/eeglab/download.php
+emd.m   :https://jp.mathworks.com/matlabcentral/fileexchange/52502-denoising-signals-using-empirical-mode-decomposition-and-hurst-analysis?focused=5516501&tab=function
