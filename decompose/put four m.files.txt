@@ -1,0 +1,4 @@
+-blockbasedMP
+-multipassMP
+-multistaegMP
+-shiftinvariantMP

@@ -1,0 +1,6 @@
+Before the use, you should compile mex files
+
+cd MSDL\minFunc_2012  % Change to the unzipped directory
+addpath(genpath(pwd)) % Add all sub-directories to the path
+mexAll                % Compile mex files (not necessary on all systems)
+example_minFunc       % Run a demo trying to minimize the function
