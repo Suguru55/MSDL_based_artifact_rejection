@@ -13,11 +13,11 @@ clear all
 close all
 
 % change your directory
-data_dir = 'C:\Users\sdxwh\Desktop\MSDL\data';
-code_dir = 'C:\Users\sdxwh\Desktop\MSDL';
-save_dir = 'C:\Users\sdxwh\Desktop\MSDL';
-addpath(genpath('C:\Users\sdxwh\Desktop\MSDL\minFunc_2012')) % add all sub-directories to the path
-addpath(genpath('C:\Users\sdxwh\Desktop\MSDL\MIToolbox-3.0.0\matlab'))
+data_dir = 'C:\Users\sdxwh\Desktop\MSDL_based_artifact_rejection-master\data';
+code_dir = 'C:\Users\sdxwh\Desktop\MSDL_based_artifact_rejection-master';
+save_dir = 'C:\Users\sdxwh\Desktop\MSDL_based_artifact_rejection-master';
+addpath(genpath('C:\Users\sdxwh\Desktop\MSDL_based_artifact_rejection-master\minFunc_2012')) % add all sub-directories to the path
+addpath(genpath('C:\Users\sdxwh\Desktop\MSDL_based_artifact_rejection-master\MIToolbox-3.0.0\matlab'))
 
 % config
 Fs = 250;
@@ -30,7 +30,7 @@ ref_ch = [2,3];  % reference channels for adaptive filter (ch #1 and #2)
 % This 'for' loop takes over 1 day, so I recommend selecting one subject and
 % one iteration for checking the performance (Even if you selected that setting, it may take about 10 minutes...).
 % ex.) sub_id = 1, iter = 1
-for sub_id = 1:sub_num
+for sub_id = 1%:sub_num
     % load data  
     cd(data_dir);
     eval(sprintf('filename = [''A0%d_Epochs.mat'']',sub_id));
@@ -40,7 +40,7 @@ for sub_id = 1:sub_num
     eval(sprintf('filename = [''A0%d_Separated.mat'']',sub_id));
     load(filename);
 
-    for iter = 1:var_size
+    for iter = 1%:var_size
         clear -global lam_num
         input_data = X_sets(:,1+(iter-1)*size(var_ind,2):size(var_ind,2)+(iter-1)*size(var_ind,2),:);
         correct_eeg = targets(:,1+(iter-1)*size(var_ind,2):size(var_ind,2)+(iter-1)*size(var_ind,2));
@@ -55,7 +55,7 @@ for sub_id = 1:sub_num
         fprintf('Sub %i iteration %i\n',sub_id,iter);
         % show MAE for artifact-reduced EEG data when SNR=0.5
         fprintf('AF: %4.2f, DOAC: %4.2f, EMD-CC: %4.2f, MSDL: %4.2f',...
-            mean(cell2mat(AF.mae_eeg(:,1))),mean(cell2mat(DOAC.mae_eeg(:,1))),mean(cell2mat(EMDandCC.mae_eeg(:,1))),mean(cell2mat(MSDL.mae_eeg(:,1))));
+            mean(cell2mat(AF(iter).mae_eeg(:,1))),mean(cell2mat(DOAC(iter).mae_eeg(:,1))),mean(cell2mat(EMDandCC(iter).mae_eeg(:,1))),mean(cell2mat(MSDL(iter).mae_eeg(:,1))));
     end 
 end
 

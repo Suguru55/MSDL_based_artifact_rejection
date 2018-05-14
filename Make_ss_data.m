@@ -60,8 +60,8 @@ thre_order = [1,3,6; 3,11,12; 3,4,7; 14,15,22; 1,7,9;...
     2,11,36; 2,9,17; 13,16,19; 6,8,14];    % order index for data_driven threshold
 
 % change this directories to yours
-data_dir = 'C:\Users\sdxwh\Desktop\MSDL\data';
-code_dir = 'C:\Users\sdxwh\Desktop\MSDL';
+data_dir = 'C:\Users\sdxwh\Desktop\MSDL_based_artifact_rejection-master\data';
+code_dir = 'C:\Users\sdxwh\Desktop\MSDL_based_artifact_rejection-master';
 addpath('C:\toolbox\biosig4octmat-3.1.0\biosig\t250_ArtifactPreProcessingQualityControl')    % to use trigg function
 addpath('C:\toolbox\biosig4octmat-3.1.0\biosig\t200_FileAccess');                            % to use sload function
 % !! I guess BioSig toolbox has specialized function for solving optimal
