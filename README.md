@@ -36,7 +36,7 @@ This project has two main m.files:<br>
 
 and six folders:<br>
 1. data<br>
-   - A01T.mat<br>
+   - A01T_label.mat<br>
    - A01T.gdf<br>
    ...<br>
 2. minFunc_2012 (after downloading this folder, you have to replace optimize_parameters.m which is including in this master file)<br>
