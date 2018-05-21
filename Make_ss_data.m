@@ -76,8 +76,8 @@ for sub_id = 1:sub_num
     cd(data_dir);
         
     eval(sprintf('filename = [''A0%dT.gdf'']',sub_id));
-    [s, HDR] = sload(filename, 0, 'OVERFLOWDETECTION:OFF');
-    eval(sprintf('filename = [''A0%dT.mat''];',sub_id));
+    [s, HDR] = sload(filename, 0);
+    eval(sprintf('filename = [''A0%dT_label.mat''];',sub_id));
     load(filename);
         
     %%%%%%%%%%%%
