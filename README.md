@@ -39,7 +39,7 @@ and six folders:<br>
     - A01T_label.mat<br>
     - A01T.gdf<br>
    ...<br>
-2. minFunc_2012 (after downloading this folder, you have to transfer optimize_parameters.m from MSDL_based_artifact_rejection to MSDL_based_artifact_rejection/minFunc_2012)<br>
+2. minFunc_2012 (after downloading this file, you have to transfer optimize_parameters.m from MSDL_based_artifact_rejection to MSDL_based_artifact_rejection/minFunc_2012)<br>
 3. MIToolbox-3.0.0<br>
 4. decompose<br>
 5. learning<br>
