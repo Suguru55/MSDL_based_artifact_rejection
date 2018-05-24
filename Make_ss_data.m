@@ -249,6 +249,7 @@ for sub_id = 1:sub_num
     eval(sprintf('filename = [''A0%d_SS_data.mat'']',sub_id));
     save(filename,'var_ind','testing_artifact','training_artifact','targets','X_sets','lambdas');  
 end
+cd(code_dir);
 
 % check
 % figure(4)
