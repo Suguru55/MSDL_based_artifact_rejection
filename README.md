@@ -1,7 +1,7 @@
 # MSDL_based_artifact_rejection
 submitted to Neurocomputing
 
-__\<Despription\>__<br />
+__\<Description\>__<br />
 These codes use an open-access dataset, <a href="http://www.bbci.de/competition/iv/#datasets" target="_blank">BCI competition IV dataset 2a</a>.<br />
 Please send <a href="http://www.bbci.de/competition/iv/#download" target="_blank">e-mail</a> to access the data before using our codes.
 
