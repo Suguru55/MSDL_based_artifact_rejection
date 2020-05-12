@@ -1,5 +1,8 @@
 # MSDL_based_artifact_rejection
-submitted to Neurocomputing
+
+This code is described in a paper
+Multi-scale dictionary learning for ocular artifact reduction from single-channel electroencephalograms` 
+accepted by *Neurocomputing*.<br />
 
 __\<Description\>__<br />
 These codes use an open-access dataset, <a href="http://www.bbci.de/competition/iv/#datasets" target="_blank">BCI competition IV dataset 2a</a>.<br />
