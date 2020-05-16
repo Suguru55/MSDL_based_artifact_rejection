@@ -1,7 +1,7 @@
 # MSDL_based_artifact_rejection
 
 This code is described in the paper
-`Multi-scale dictionary learning for ocular artifact reduction from single-channel electroencephalograms` 
+<a href="https://www.sciencedirect.com/science/article/pii/S0925231219305260" target="_blank">Multi-scale dictionary learning for ocular artifact reduction from single-channel electroencephalograms</a> 
 accepted by *Neurocomputing*.<br />
 
 __\<Description\>__<br />
