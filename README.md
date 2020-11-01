@@ -49,6 +49,7 @@ and six folders:<br />
 6. utilities.
 
 The last three files (4-6) are downloaded files (<a href="http://cnel.ufl.edu/~ajbrockmeier/eeg/" target="_blank">Algorithms and demos.zip</a>)
+If you can not access above link, please check (<a href="https://drive.google.com/drive/folders/1dMCYjST297Ivc-GAu9fO4emyoq_NzHul?usp=sharing" target="_blank">here</a>).
 
 __\<Environments\>__<br />
 MALBAB R2017a
